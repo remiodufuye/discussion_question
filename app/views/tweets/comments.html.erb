@@ -1,0 +1,6 @@
+<h1>Comments for Tweet: <%= @tweet.name %></h1>
+    <ul>
+        <%@tweet.comments.each do |comment|%>
+        <li><%=comment.content %></li>
+        <% end %>
+    </ul>

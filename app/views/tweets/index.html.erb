@@ -1,0 +1,7 @@
+<h1> Welcome to Our Tweets App </h1>
+
+<ul>
+<% @tweets.each do |tweet| %>
+<li><%= link_to tweet.name, tweet_path(tweet) %></li>
+<% end %>
+</ul>
